@@ -1,5 +1,5 @@
 {
-  "version": "1.4.0",
+  "version": "1.0.0",
   "patches": [
     {
       "name": "Add archive links to context menu",
@@ -144,7 +144,7 @@
     },
     {
       "name": "Fix /s/ links",
-      "description": null,
+      "description": "Fixes Reddit's /s/ share links failing to open.",
       "use": true,
       "dependencies": [
         "BytecodePatch"
@@ -158,7 +158,7 @@
     },
     {
       "name": "Fix /s/ links",
-      "description": null,
+      "description": "Fixes Reddit's /s/ share links failing to open.",
       "use": true,
       "dependencies": [
         "BytecodePatch"
@@ -175,7 +175,7 @@
     },
     {
       "name": "Fix /s/ links",
-      "description": null,
+      "description": "Fixes Reddit's /s/ share links failing to open.",
       "use": true,
       "dependencies": [
         "BytecodePatch"
@@ -241,6 +241,23 @@
       "options": []
     },
     {
+      "name": "Fix Redgifs audio",
+      "description": "Fixes Redgifs videos playing without sound.",
+      "use": true,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": {
+        "free.reddit.news": [
+          "10.2.40"
+        ],
+        "reddit.news": [
+          "10.2.40"
+        ]
+      },
+      "options": []
+    },
+    {
       "name": "Fix missing audio in video downloads",
       "description": "Fixes audio missing in videos downloaded from v.redd.it.",
       "use": true,
@@ -266,6 +283,21 @@
         ],
         "com.laurencedawson.reddit_sync.pro": null,
         "com.laurencedawson.reddit_sync.dev": null
+      },
+      "options": []
+    },
+    {
+      "name": "Fix sidebar",
+      "description": "Fixes the subreddit sidebar failing to load.",
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "free.reddit.news": [
+          "10.2.40"
+        ],
+        "reddit.news": [
+          "10.2.40"
+        ]
       },
       "options": []
     },
